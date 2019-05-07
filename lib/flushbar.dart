@@ -222,7 +222,7 @@ class _FlushbarState<K extends Object> extends State<Flushbar> with TickerProvid
     widget.progressIndicatorController?.removeListener(_progressListener);
     widget.progressIndicatorController?.dispose();
 
-    focusNode.detach();
+    focusNode.dispose();
     super.dispose();
   }
 
